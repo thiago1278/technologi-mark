@@ -1,0 +1,15 @@
+.footer{
+	padding: 10px 20px;
+	text-align: right;
+	background-color: black;
+	grid-area: pie;
+	justify-content: space-around;
+}
+
+.footer__a{
+	text-decoration: none;
+}
+
+body{
+	grid-template-areas: "nav" "main" "pie";
+}

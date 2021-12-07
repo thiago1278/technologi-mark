@@ -1,0 +1,23 @@
+@import "tipografia";
+@import "nav";
+@import "contenido";
+@import "footer";
+
+$color-orange:orange;
+$color-black:black;
+
+@media only screen and (min-width: 768px){
+	body{
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: 10vh 70vh 20vh;
+         grid-template-areas: "nav nav nav" "main main main" "pie pie pie";
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	body{
+		grid-template-columns: repeat(2, 30%) 20px 30%;
+		grid-template-rows: 10vh 70vh 20vh;
+		grid-template-areas: "nav nav nav nav" "main main main ." "pie pie pie pie";
+	}
+}

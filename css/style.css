@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+	font-size: 2rem;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+	background-color: black;
+	padding: 20px;
+	grid-area: nav;
+}
+
+nav ul{
+	float: right;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline;
+	margin-right: 10px;
+}
+
+nav ul li a{
+	color: orange;
+    font-family: 'Bebas Neue', cursive;
+	font-weight:400;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus{
+	background-size: 100% 2px;
+}
+
+nav ul li a:hover{
+	color: darkorange;
+}
+
+main{
+	grid-area: main;
+}
+
+.main-six{
+display: flex;
+height: 80vh;
+margin-top: 1px;
+}
+
+.image-six{
+	width: 250px;
+	height: 300px;
+}
+
+main section div{
+	display: inline;
+}
+
+.caja{
+	margin: 20px;
+}
+
+.text-seven{
+    display: inline;
+}
+
+.grid-layout-seven{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 80%;
+	margin: 0 auto;
+	background-color: darkorange;
+	padding: 20px;
+	border: 1px solid black;
+	justify-content: space-around;
+}
+
+.caja-seven{
+	width: 200px;
+	height: 200px;
+	border: 4px solid black;
+	background-color: orange;
+	text-align: center;
+	line-height: 150px;
+}
+
+footer{
+	padding: 10px 20px;
+	text-align: right;
+	background-color: black;
+	grid-area: pie;
+	justify-content: space-around;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+.container{
+	display: flex;
+}
+
+.grid{
+	width: 99%;
+	display: inline-grid;
+}
+
+.grid-template-columns-row{
+    grid-templates-columns : repeat(3 y 1fr); "cant de columnas en numero"
+}
+
+main section article div img:hover{
+	transform: translateY(-10px);
+	transition: transform 1s;
+}
+
+body{
+	grid-template-areas: "nav" "main" "pie";
+}
+
+/*transform*/
+
+/*html{
+	font-size: 62.5%
+}*/
+

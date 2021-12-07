@@ -1,0 +1,35 @@
+.nav{
+	background-color: black;
+	padding: 20px;
+	grid-area: nav;
+}
+
+.nav__ul{
+	float: right;
+}
+
+.nav__li{
+	list-style: none;
+	display: inline;
+	margin-right: 10px;
+}
+
+.nav__a{
+	color: orange;
+    font-family: 'Bebas Neue', cursive;
+	font-weight:400;
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover, a:focus{
+	background-size: 100% 2px;
+}
+
+.nav__a:hover{
+	color: darkorange;
+}
